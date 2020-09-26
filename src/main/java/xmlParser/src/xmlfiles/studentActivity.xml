@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students count="3">
+    <Student name="Ann Harding" numActivities="4">
+        <Activity type="course">
+            <instructor>"Prof Midkiff"</instructor>
+            <credit>3</credit>
+            <name>Object Oriented Programming</name>
+            <meetingTime>11:30AM</meetingTime>
+            <meetingDay>MWF</meetingDay>
+            <number>39595C</number>
+            <location>Remote</location>
+        </Activity>
+        <Activity type="club">
+            <name>Autonomous things</name>
+            <meetingTime>4:00PM</meetingTime>
+            <meetingDay>Monday</meetingDay>
+            <location>Catacombs, ME building</location>
+        </Activity>
+        <Activity type="course">
+            <instructor>Brook Parke</instructor>
+            <credit>1</credit>
+            <name>Junior seminar</name>
+            <number>40000</number>
+            <location>Remote</location>
+            <meetingTime>4:30PM</meetingTime>
+            <meetingDay>Monday</meetingDay>
+        </Activity>
+        <Activity type="club">
+            <location>Vet Med building</location>
+            <meetingTime>7:00AM</meetingTime>
+            <meetingDay>Sunday</meetingDay>
+            <name>Epidemiology</name>
+        </Activity>
+    </Student>
+    <Student numActivities="1"  name="Walid Abu-Sufah">
+        <Activity type="course">
+            <instructor>Mark Johnson</instructor>
+            <location>EE 100</location>
+            <credit>1</credit>
+            <name>Senior Design</name>
+            <number>49200</number>
+        </Activity>
+    </Student>
+    <Student name="Alex Nicolau" numActivities="1">
+        <Activity type="club">
+            <name>Epidemiology</name>
+            <meetingTime>7:00AM</meetingTime>
+            <meetingDay>Sunday</meetingDay>
+            <location>Vet Med building</location>
+        </Activity>
+    </Student>
+</Students>
