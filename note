@@ -1,0 +1,93 @@
+Step 1
+
+Updated:
+9/29 - Organized Folders
+     - Create required class
+     - Creating test cases (Passage need clarification) (This one haven't finished)
+
+10/3 - worked on dungeon class and ObjectDisplayGrid
+     - Created Parser file named (DungeonXMLHandler)
+
+
+10/4 - worked on Displayable, Structure, Player, Monster, Creature, Player, Monster, Item, Scroll, Armor, Sword, Test
+     - will work a bit on Parser
+
+10/7
+     - updated xmls
+     - Worked on filling out rest of classes from parserXML.pdf
+  Questions:
+     - Dungeon toString still hasn't done - Done?
+     - CreatureAction type handling?
+     - todo: Implement ItemAction Constructor
+     - Name in CreatureAction/their implementations?
+
+Todo:
+     - Dungeon toString 
+     - Parser
+
+
+Stand alone classes:
+
+Dungeon             ObjectDisplayGrid
+
+
+Hierarchy classes:
+
+
+                               Displayable 
+
+
+            /               /                  \                   \ 
+        Structure        Creature              Item               Magic
+        /      \          /    \             /      \   \
+      Room    Passage  Player Monster      Scroll  Armor  Sword 
+
+
+                               Action 
+               /                                          \
+            CreatureAction                              ItemAction
+         /  /  /  \  \  \  \                          /          \
+       Tel Rem You Up En Ch Dr                 BlessCurseOwner    Hallucinate 
+
+
+
+
+
+Design update:
+-> Singleton design pattern for Dungeon and ObjectDisplayGrid
+-> ArrayList for room, creature, passage, item, PosX, PosY, CreatureAction, ItemAction
+-> Action should be something similiar to Stragegy pattern, and be put in each creature
+-> Players can only have armor and sword
+-> Monster can have armor 
+
+Dungeon will have name, width, topHeight, gameHeight, bottomHeight
+     Rooms will have items, players or monsters
+          Item 
+     Passage 
+
+
+
+Step 2 
+
+Goal:
+display the dungeon and control player movement
+
+-> treat asciipanel code as black box
+-> 
+
+
+Step 3
+Goal:
+Changed implementations
+
+
+display playerHP, core on top Display (done)
+display Pack: and info: on bottom Display (done)
+? character display help message (done)
+press H <next input character> display what the character will do 
+press E <next input character> if <next input char> is Y or y, then the game is ended (done)
+Display item in the pack (done)
+
+hit the monster and display creature action, if Hp is less than 0, end the game
+pick up and drop the item 
+

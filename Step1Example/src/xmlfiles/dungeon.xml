@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+    <Room id="1">
+        <upperLeftX>1</upperLeftX>
+        <upperLeftY>2</upperLeftY>
+        <width>12</width>
+        <height>8</height>
+        <Monster id="101">
+            <posX>3</posX>
+            <posY>4</posY>
+            <type>T</type>
+            <hp>7</hp>
+            <armor>7</armor>
+            <maxhit>10</maxhit>
+        </Monster>
+        <Monster id="102">
+            <posX>6</posX>
+            <posY>7</posY>
+            <type>S</type>
+            <hp>2</hp>
+            <armor>2</armor>
+            <maxhit>1</maxhit>
+        </Monster>
+    </Room>
+    <Room id="2">
+        <upperLeftX>20</upperLeftX>
+        <upperLeftY>30</upperLeftY>
+        <width>10</width>
+        <height>12</height>
+        <Monster id="201">
+            <posX>3</posX>
+            <posY>4</posY>
+            <type>T</type>
+            <hp>7</hp>
+            <armor>7</armor>
+            <maxhit>10</maxhit>
+        </Monster>
+        <Monster id="202">
+            <posX>6</posX>
+            <posy>7</posy>
+            <type>S</type>
+            <hp>2</hp>
+            <armor>2</armor>
+            <maxhit>1</maxhit>
+        </Monster>
+    </Room>
+</Rooms>
